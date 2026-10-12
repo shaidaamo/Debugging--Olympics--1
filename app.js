@@ -17,7 +17,7 @@ let currentQuestion = 0;
 let score = 0;
 
 function showQuestion() {
-  questionDisplay.textContent = questions.question;
+  questionDisplay.textContent = questions[currentQuestion].question;
 }
 
 function checkAnswer() {
@@ -35,7 +35,7 @@ function checkAnswer() {
     messageDisplay.textContent = "Incorrect!";
   }
 
-  scoreDisplay.textContent = score;
+  scoreDisplay.textcontent = score;
   currentQuestion += 1;
   answerInput.value = "";
 
